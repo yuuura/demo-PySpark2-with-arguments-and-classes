@@ -11,3 +11,5 @@ lines = my_spark.sc.sparkContext.textFile("/path_in_hadoop_cluster/book.txt")
 # Using class 'Counter' we will count words from 'book.txt' file
 # and print the result
 print word_count.Counter(lines).count_words()
+
+
