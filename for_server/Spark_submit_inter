@@ -1,0 +1,9 @@
+#!/bin/sh
+
+for arg do
+  shift
+  [ "$arg" = "-u" ] && continue
+  set -- "$@" "$arg"
+done
+
+exec /usr/bin/spark-submit $@
